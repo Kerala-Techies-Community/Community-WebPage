@@ -63,3 +63,16 @@ This project is licensed under the [MIT License](LICENSE)
 
 Made with ❤️ by [Kerala Techies](https://keralatechies.org)  
 Let's build the future of tech from Kerala! 🌴💻
+
+
+## 🛠️ Development Setup
+
+### 📦 Environment Requirements
+- **Node.js**: v22+
+- **pnpm**: Latest version (recommended over npm)
+
+Make sure both are installed:
+
+```bash
+node -v   # should be 22.x or higher
+pnpm -v   # ensure latest

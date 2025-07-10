@@ -1,9 +1,10 @@
-import "./globals.css";
+import IndroductionToCommunity from "@/components/Home/IndroductionToCommunity";
+
 
 export default function Home() {
   return (
-    <h1 className="text-3xl font-bold underline">
-      Hello world!
-    </h1>
+    <>
+      <IndroductionToCommunity />
+    </>
   )
 }
