@@ -12,7 +12,8 @@ const IntroductionToCommunity = () => {
       <p className="mb-2">
         We focus on everything that matters to a developer&apos;s life:
         from career guidance and skill-building to real-world problem-solving,
-        and even much-needed breaks—like casual meetups, friendly tours, and chill sessions to unwind.
+        and even much-needed breaks—
+        breaks—like casual meetups, friendly tours, and chill sessions to unwind.
       </p>
       <p className="mb-2">
         Join us to connect, learn, grow, and enjoy the journey of being a developer—together.
