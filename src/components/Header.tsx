@@ -1,64 +1,62 @@
-'use client'; // only if you're using app directory and client components
-
-import React from 'react';
 import Link from 'next/link';
 
-const Header: React.FC = () => {
+const Header = () => {
   return (
-    <header className="main-header">
-      <div className="container">
-        <h1 className="logo">
-          <Link href="/">Developer Community Hub</Link>
-        </h1>
-        <nav className="nav-links">
-          <Link href="/about">About Us</Link>
-          <Link href="/founders-stories">Founders & Stories</Link>
-          <Link href="/members">Members</Link>
-          <Link href="/contact">Contact</Link>
-          <Link href="/join" className="join-btn">Join</Link>
-        </nav>
-      </div>
+    <header className="navbar-light header-static bg-transparent">
+      <nav className="navbar navbar-expand-lg">
+        <div className="container">
+          {/* Logo */}
+          <Link className="navbar-brand" href="/">
+            <img
+              src="/logo.svg"
+              alt="Logo"
+              width={50}
+              height={50}
+              className="light-mode-item navbar-brand-item"
+            />
+          </Link>
 
-      <style jsx>{`
-        .main-header {
-          background-color: #f9f9f9;
-          padding: 1rem 2rem;
-          border-bottom: 1px solid #ddd;
-        }
-        .container {
-          display: flex;
-          align-items: center;
-          justify-content: space-between;
-          flex-wrap: wrap;
-        }
-        .logo a {
-          text-decoration: none;
-          font-size: 1.5rem;
-          font-weight: bold;
-          color: #333;
-        }
-        .nav-links {
-          display: flex;
-          gap: 1rem;
-        }
-        .nav-links a {
-          text-decoration: none;
-          color: #0070f3;
-          font-weight: 500;
-        }
-        .nav-links a:hover {
-          text-decoration: underline;
-        }
-        .join-btn {
-          background-color: #0070f3;
-          color: white;
-          padding: 0.4rem 0.8rem;
-          border-radius: 4px;
-        }
-        .join-btn:hover {
-          background-color: #005bb5;
-        }
-      `}</style>
+          {/* Responsive navbar toggler */}
+          <button
+            className="navbar-toggler ms-auto icon-md btn btn-light p-0"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarCollapse"
+            aria-controls="navbarCollapse"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span className="navbar-toggler-animation">
+              <span></span>
+              <span></span>
+              <span></span>
+            </span>
+          </button>
+
+          {/* Main navbar */}
+          <div className="flex-1 flex h-full items-center justify-between">
+            <ul className="flex my-4 box-border items-center flex-col md:flex-row md:space-x-6">
+              <li>
+                <a href="blog.html" className="text-gray-700 hover:text-blue-600">
+                  Blog
+                </a>
+              </li>
+              <li>
+                <a href="settings.html" className="text-gray-700 hover:text-blue-600">
+                  Security
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          {/* Right button */}
+          <div className="ms-3 ms-lg-auto">
+            <a className="btn btn-dark" href="app-download.html">
+              Download app
+            </a>
+          </div>
+        </div>
+      </nav>
     </header>
   );
 };

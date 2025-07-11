@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import React from 'react'
 /*
 
@@ -16,24 +17,68 @@ or Kerala-style outdoor dev session.
 
 */
 const BannerComponent = () => {
-  return (
-    <div style={{
-        width: '100%',
-        height: '400px',
-        backgroundColor: '#f0f0f0',
-        display: 'flex',
-        flexDirection: 'column',
-        justifyContent: 'center',
-        alignItems: 'center',
-    }}>
-        <h1 style={{ fontWeight: 'bold' }}>A Developer-Driven Community for Growth, Support & Good Vibes.</h1>
-        <h2>Join Keralatechies — where developers come together to learn, build, chill, and grow.</h2>
-        <div>
-            <button>🟢 Join the Community</button>
-            <button>🔵 See Upcoming Events</button>
-        </div>  
-    </div>
-  )
+    return (
+        <section className="py-4 py-sm-5">
+            <div className="container">
+                <div className="row justify-content-center">
+                    {/* <!-- Title --> */}
+                    <div className="col-lg-12 text-center mb-4">
+                        <h2 className="h1">More than messaging</h2>
+                        <p>Express besides it present if at an opinion visitor. </p>
+                    </div>
+                </div>
+                {/* <!-- Row START --> */}
+                <div className="row g-4 g-lg-5">
+                    {/* <!-- Feature START --> */}
+                    <div className="col-md-4 text-center">
+                       
+                        <Image
+                            className="h-100px mb-4"
+                            src="assets/images/elements/02.svg"
+                            alt=""
+                            width={50}
+                            height={50}
+                        />
+                        <h4>Voice and video calls</h4>
+                        <p className="mb-0">Place voice no arises along to. Parlors waiting so against me no. Wishing
+                            calling is warrant settled was lucky.</p>
+                    </div>
+                    {/* <!-- Feature END --> */}
+
+                    {/* <!-- Feature START --> */}
+                    <div className="col-md-4 text-center">
+                      
+                        <Image
+                            className="h-100px mb-4" src="assets/images/elements/07.svg"
+                            alt=""
+                            width={50}
+                            height={50}
+                        />
+                        <h4>Auto save contacts</h4>
+                        <p className="mb-0">Handsome met debating sir dwelling age material. As style lived he worse dried.
+                            visitors subjects distance.</p>
+                    </div>
+                    {/* <!-- Feature END --> */}
+
+                    {/* <!-- Feature START --> */}
+                    <div className="col-md-4 text-center">
+                        
+                        <Image
+                            className="h-100px mb-4" src="assets/images/elements/01.svg"
+                            alt=""
+                            width={50}
+                            height={50}
+                        />
+                        <h4>End to end encryption</h4>
+                        <p className="mb-0">Yet uncommonly his ten who diminution astonished. Demesne new manners savings
+                            staying had. </p>
+                    </div>
+                    {/* <!-- Feature END --> */}
+                </div>
+                {/* <!-- Row START --> */}
+            </div>
+        </section>
+    )
 }
 
 export default BannerComponent

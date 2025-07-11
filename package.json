@@ -2,14 +2,20 @@
   "name": "website-kt-cmnty",
   "version": "0.1.0",
   "private": true,
+  "packageManager": "pnpm@10.12.1",
   "scripts": {
+    "preinstall": "node .pnpm-preinstall-check.js",
+    "install:all": "pnpm install",
     "dev": "next dev --turbopack",
     "build": "next build && node scripts/fix-static-paths.js",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "clear && next lint"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-free": "6.7.2",
     "@tailwindcss/postcss": "^4.1.11",
+    "bootstrap": "^5.3.7",
+    "bootstrap-icons": "^1.13.1",
     "next": "15.3.5",
     "postcss": "^8.5.6",
     "react": "^19.0.0",
